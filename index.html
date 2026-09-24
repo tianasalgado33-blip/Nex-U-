@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexU | Asesorías Vocacionales</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><span class="brand-mark">N</span>NexU</a>
+  <nav class="nav">
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#orientacion">Orientación</a>
+    <a href="#solicitar">Solicitar asesoría</a>
+    <a href="#recursos">Recursos</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle">☰</button>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div>
+    <p class="eyebrow">NEXU · ASESORÍAS VOCACIONALES</p>
+    <h1>Tu siguiente paso empieza por conocerte.</h1>
+    <p class="hero-text">Un espacio de acompañamiento para estudiantes que están pensando en su futuro académico y profesional, sus intereses, habilidades, gustos y metas.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#solicitar">Solicitar una asesoría</a>
+      <a class="btn secondary" href="#como-funciona">Conocer el proceso</a>
+    </div>
+    <p class="small-note">La asesoría no busca decirte qué carrera debes escoger. Busca acompañarte para que puedas tomar una decisión más consciente.</p>
+  </div>
+  <div class="hero-card">
+    <span class="mini-label">ESPACIO DEL ESTUDIANTE</span>
+    <div class="student-icon">✦</div>
+    <h2>¿Tienes dudas sobre tu futuro?</h2>
+    <p>Empieza identificando lo que te gusta, lo que sabes hacer y lo que quieres construir.</p>
+    <a href="#solicitar">Empezar →</a>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>54,2%</strong><span>de los estudiantes de colegio encuestados tenía clara la carrera que quería estudiar.</span></div>
+  <div><strong>100%</strong><span>estaría de acuerdo con utilizar una herramienta de orientación.</span></div>
+  <div><strong>57,1%</strong><span>de los universitarios encuestados no recibió orientación para ingresar a su carrera.</span></div>
+</section>
+
+<section class="section" id="como-funciona">
+  <div class="section-heading">
+    <p class="eyebrow">EL PROCESO</p>
+    <h2>Una orientación pensada para ti</h2>
+    <p>El proyecto busca acompañar la transición hacia la educación superior y reducir la incertidumbre al momento de elegir.</p>
+  </div>
+  <div class="steps">
+    <article><span>01</span><h3>Conócete</h3><p>Reflexiona sobre tus gustos, habilidades, intereses y metas.</p></article>
+    <article><span>02</span><h3>Explora</h3><p>Conoce opciones de estudio y piensa cómo se relacionan con tus características y expectativas.</p></article>
+    <article><span>03</span><h3>Prepárate</h3><p>Reconoce algunos cambios y exigencias que pueden aparecer al entrar a la educación superior.</p></article>
+    <article><span>04</span><h3>Decide con más claridad</h3><p>Recibe acompañamiento para analizar tus opciones y construir tu siguiente paso.</p></article>
+  </div>
+</section>
+
+<section class="section soft" id="orientacion">
+  <div class="section-heading"><p class="eyebrow">¿QUÉ ENCONTRARÁS?</p><h2>Un acompañamiento más completo</h2></div>
+  <div class="feature-grid">
+    <article><div class="feature-icon">◎</div><h3>Orientación vocacional</h3><p>Identificación de intereses, habilidades, gustos y metas para analizar opciones de carrera.</p></article>
+    <article><div class="feature-icon">▣</div><h3>Apoyo académico</h3><p>Orientación relacionada con la preparación y adaptación a las nuevas responsabilidades académicas.</p></article>
+    <article><div class="feature-icon">♡</div><h3>Seguimiento emocional</h3><p>El proyecto reconoce la importancia de aspectos emocionales, familiares y de adaptación.</p></article>
+    <article><div class="feature-icon">↗</div><h3>Red de apoyo</h3><p>Una propuesta de acompañamiento que busca conectar al estudiante con apoyos y orientación.</p></article>
+  </div>
+</section>
+
+<section class="section booking" id="solicitar">
+  <div class="booking-copy">
+    <p class="eyebrow">TU ASESORÍA</p>
+    <h2>Solicita tu espacio de orientación</h2>
+    <p>Completa tus datos y cuéntanos qué necesitas. En este prototipo, la solicitud se guarda únicamente en este dispositivo para mostrar cómo funcionaría el flujo.</p>
+    <div class="notice"><strong>Importante:</strong> esta versión está preparada para GitHub Pages. Para que las solicitudes sean compartidas entre estudiantes y asesores se necesitará conectar posteriormente una base de datos.</div>
+  </div>
+  <form class="booking-form" id="bookingForm">
+    <label>Nombre<input id="name" type="text" placeholder="Escribe tu nombre" required></label>
+    <label>Correo electrónico<input id="email" type="email" placeholder="tu.correo@ejemplo.com" required></label>
+    <label>Nivel actual<select id="level" required>
+      <option value="">Selecciona una opción</option><option>Grado 9°</option><option>Grado 10°</option><option>Grado 11°</option><option>Estudiante universitario</option>
+    </select></label>
+    <label>¿En qué necesitas orientación?<select id="topic" required>
+      <option value="">Selecciona una opción</option><option>Elección de carrera</option><option>Conocer mis intereses y habilidades</option><option>Conocer opciones de estudio</option><option>Preparación para la educación superior</option><option>Otra inquietud vocacional</option>
+    </select></label>
+    <label>Cuéntanos brevemente qué te gustaría trabajar<textarea id="message" rows="4" placeholder="Escribe aquí..."></textarea></label>
+    <button class="btn primary full" type="submit">Enviar solicitud</button>
+    <p class="form-status" id="formStatus"></p>
+  </form>
+</section>
+
+<section class="section" id="recursos">
+  <div class="section-heading"><p class="eyebrow">RECURSOS</p><h2>Antes de tu asesoría</h2><p>La investigación resalta que la decisión profesional debe considerar los intereses propios y no solamente factores externos como la presión familiar o la demanda laboral.</p></div>
+  <div class="resource-grid">
+    <article><span>01</span><h3>Piensa en tus intereses</h3><p>¿Qué actividades disfrutas? ¿Qué temas despiertan tu curiosidad?</p></article>
+    <article><span>02</span><h3>Reconoce tus habilidades</h3><p>Identifica aquello que haces bien y las capacidades que quieres seguir desarrollando.</p></article>
+    <article><span>03</span><h3>Imagina tu futuro</h3><p>Piensa en tus metas y en el tipo de formación que podría acercarte a ellas.</p></article>
+  </div>
+</section>
+
+<section class="closing"><div><p class="eyebrow">NEXU</p><h2>Sentirse perdido es normal. Con una guía, el camino puede ser más claro.</h2></div><a class="btn light" href="#solicitar">Solicitar asesoría →</a></section>
+</main>
+
+<footer><div><strong>NexU · Asesorías Vocacionales</strong><p>Proyecto académico — Métodos de Obtención y Análisis · 2026</p></div><p>La información y el enfoque se basan en el documento base de la investigación.</p></footer>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="modal-close" id="close">×</button><div class="success">✓</div><h2>Solicitud registrada</h2><p id="modalText"></p><button class="btn primary" id="ok">Entendido</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
